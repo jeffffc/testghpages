@@ -1,3 +1,6 @@
-$().ready(function() {
-   $("#text").html("Text added by jQuery code.");
+$().ready(function(){
+    $.getJSON( "https://worldtimeapi.org/api/timezone/Asia/Hong_Kong", function( data ) {
+    console.log(data);
+    $("#text").html(data["datetime"]);
+  });
 });
