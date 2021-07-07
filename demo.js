@@ -7,4 +7,4 @@ function getTime() {
     });
 }
 
-setTimeout(getTime, 1000);
+var period = setInterval('getTime();', 10000);
