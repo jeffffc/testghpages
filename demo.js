@@ -1,6 +1,6 @@
 $().ready(function(){
-    $.getJSON( "https://worldtimeapi.org/api/timezone/Asia/Hong_Kong", function( data ) {
+    $.getJSON( "https://www.timeapi.io/api/Time/current/zone?timezone=Asia:Hong_Kong", function( data ) {
     console.log(data);
-    $("#text").html(data["datetime"]);
+    $("#text").html(data["dateTime"]);
   });
 });
